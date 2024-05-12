@@ -60,12 +60,12 @@ function injectPopup(word, definition, x, y) {
     popup.style.boxShadow = "0 1px 9px rgba(0,0,0,0.08)";
     popup.style.border = "1px solid #e8eaed";
     popup.innerHTML = `<div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 30px;">
-                        <h1 style="font-size: 20px;">${word}</h1>
+                        <h1 style="font-size: 20px; margin: 0;">${word}</h1>
                         <a id="weblio-link" href="${directWeblioURL + word}" target="_blank" style="margin: 0; text-decoration: none;
                         background-color: #564c46; color: #f9f1e9; height: 30px; text-align: center; line-height: 30px;
                         width: 85px; border-radius: 5px; box-shadow: 0 10px 25px rgba(16,30,54,0.1); position: relative;">詳しく見る</a>
                        </div>
-                       <p id="mr-reed-definition">${definition}</p>`;
+                       <p id="mr-reed-definition" style="margin: 0;">${definition}</p>`;
     document.body.appendChild(popup);
     document.getElementById('weblio-link').addEventListener('mouseout', (event) => {
         event.target.style.boxShadow = '0 10px 25px rgba(16,30,54,0.1)';
