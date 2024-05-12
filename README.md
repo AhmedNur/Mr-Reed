@@ -1,8 +1,13 @@
 # Mr-Reed
 A Chrome extension that allows you to quickly look up terms in Weblio's English - Japanese dictionary.
 
+![Demo Image](https://i.imgur.com/C5qWI8a.png)
+
 ## Installation
 Mr-Reed has not yet been added to the Chrome web store. Installation requires you to follow the instructions provided [here.](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked)
+
+## How to use
+Simply hover your mouse over a word while holding the shift key and a short definition along with a link to read a more detailed explanation will appear. This extension works both English -> Japanese as well as the reverse, Japanese -> English.
 
 ## CORS Proxy
 
