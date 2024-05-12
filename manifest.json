@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ミスターリード - 英単語を検索する",
+  "version": "1.0",
+  "description": "閲覧中に素早く英単語を検索する",
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "webRequest"
+  ]
+}
